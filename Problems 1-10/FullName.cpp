@@ -17,7 +17,9 @@ stInfo ReadInfo()
     cin >> Info.LastName;
     cout << "Is The Name Reversed? (1 for Yes / 0 for No)" << endl;
     cin >> Info.Reversed;
-    return Info;
+
+    
+    return Info
 }
 
 string GetFullName(stInfo Info, bool Reversed)

@@ -1,12 +1,12 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 int ReadTotalSales()
 {
-    int TotalSalses = 0;
-    cout << "Please Enter The Total Sales" << endl;
-    cin >> TotalSalses;
-    return TotalSalses;
+    int TotalSales = 0;
+    cout << "Please Enter The Total Sales: " << endl;
+    cin >> TotalSales;
+    return TotalSales;
 }
 
 float GetComissionPercentage(float TotalSales)

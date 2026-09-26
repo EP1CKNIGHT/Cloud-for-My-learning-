@@ -1,6 +1,5 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
-
 float ReadNumber(string Massage)
 {
     float Num = 0;
