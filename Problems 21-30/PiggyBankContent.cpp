@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <iostream>
 
 using namespace std;
 
@@ -12,15 +12,15 @@ struct stPiggyBankContent
 stPiggyBankContent ReadPiggyBankContent()
 {
     stPiggyBankContent BankContent;
-    cout << "Enter Pennies " << endl;
+    cout << "Enter Pennies: " << endl;
     cin >> BankContent.Pennies;
-    cout << "\nEnter Nickels " << endl;
+    cout << "\nEnter Nickels: " << endl;
     cin >> BankContent.Nickels;
-    cout << "\nEnter Dimes " << endl;
+    cout << "\nEnter Dimes: " << endl;
     cin >> BankContent.Dimes;
-    cout << "\nEnter Quarters " << endl;
+    cout << "\nEnter Quarters: " << endl;
     cin >> BankContent.Quarters;
-    cout << "\nEnter Dollars " << endl;
+    cout << "\nEnter Dollars: " << endl;
     cin >> BankContent.Dollars;
 
     return BankContent;
