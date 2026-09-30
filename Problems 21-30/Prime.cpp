@@ -1,12 +1,55 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <math.h>
 using namespace std;
 
-float ReadNumber(string Massage)
+enum enPrimeNotPrime
 {
+    Prime = 1,
+    NotPrime = 2
+};
+
+float ReadPostiveNumber(string Massage)
+{
+
     float Num = 0;
-    do{
-    cout << Massage << endl;
-    cin >> Num;
-    }while(Num>0);
+    do
+    {
+        if (true)
+            cout << Massage << endl;
+        cin >> Num;
+
+    } while (Num < 0);
+
     return Num;
+}
+
+enPrimeNotPrime CheckPrime(int Number)
+{
+    int HalfNumber = round(Number / 2);
+    if (Number < 2)
+        return enPrimeNotPrime::NotPrime;
+
+    else
+    {
+        for (int counter = 2; counter <= HalfNumber; counter++)
+        {
+            if (Number % counter == 0)
+                return enPrimeNotPrime::NotPrime;
+        }
+    }
+    return enPrimeNotPrime::Prime;
+}
+
+void PrintType(int Number)
+{
+
+    if (CheckPrime(Number) == enPrimeNotPrime::NotPrime)
+        cout << "The Number isn't Prime.\n";
+    else 
+        cout << "The Number is Prime.\n";
+
+}
+int main()
+{
+    PrintType(CheckPrime(ReadPostiveNumber("Please Enter A Postive Number: ")));
 }
