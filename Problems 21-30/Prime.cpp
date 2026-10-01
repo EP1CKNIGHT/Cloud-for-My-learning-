@@ -42,12 +42,17 @@ enPrimeNotPrime CheckPrime(int Number)
 
 void PrintType(int Number)
 {
-
-    switch(CheckPrime(Number))
-
-
+    switch (CheckPrime(Number))
+    {
+    case enPrimeNotPrime::Prime:
+        cout << "The Number is Prime" <<endl;
+        break;
+        case enPrimeNotPrime::NotPrime:
+        cout << "The Number isn't Prime" <<endl;
+        break;
+    }
 }
 int main()
 {
-    PrintType(ReadPostiveNumber("Please Enter A Postive Number: ")) ;
+    PrintType(ReadPostiveNumber("Please Enter A Postive Number: "));
 }
