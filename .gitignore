@@ -429,3 +429,7 @@ FodyWeavers.xsd
 *.msp
 *.exe
 *.exe
+.DS_Store
+.code-runner/
+.code-runner/
+.DS_Store
