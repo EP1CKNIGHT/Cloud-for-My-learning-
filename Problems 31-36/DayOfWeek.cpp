@@ -58,6 +58,9 @@ string GetDayOfWeek(enDaysOfWeek Day)
 
     case (enDaysOfWeek::Sat):
         return "Satrday";
+
+    default:
+        return "Not a valid Day";
     }
 }
 
